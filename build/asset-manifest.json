@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/stewartApp/static/css/main.42ac57a0.css",
-    "main.js": "/stewartApp/static/js/main.c4b9600a.js",
-    "static/js/787.b9823949.chunk.js": "/stewartApp/static/js/787.b9823949.chunk.js",
-    "static/media/banner-1.jpg": "/stewartApp/static/media/banner-1.d3a39849793c3cf601e2.jpg",
-    "static/media/banner-2.jpg": "/stewartApp/static/media/banner-2.41cf057a2cc3a8e8fee2.jpg",
-    "static/media/ownersrep.png": "/stewartApp/static/media/ownersrep.88d758d09e7859e68813.png",
-    "static/media/ownersrep2.png": "/stewartApp/static/media/ownersrep2.15bfd1d16647e400d7c5.png",
-    "static/media/logos.png": "/stewartApp/static/media/logos.fc480d72fb4ee31dcf2e.png",
-    "static/media/banner-4.jpg": "/stewartApp/static/media/banner-4.4be7121da1b80128ac71.jpg",
-    "static/media/banner-3.jpg": "/stewartApp/static/media/banner-3.30b0c16e1be7e61bfce0.jpg",
-    "static/media/bodyBackground.jpeg": "/stewartApp/static/media/bodyBackground.84c95165a5c52279a95c.jpeg",
-    "static/media/bodyBackgroundtop.jpeg": "/stewartApp/static/media/bodyBackgroundtop.b05c1822fa162b359e68.jpeg",
-    "static/media/contactIMG.jpg": "/stewartApp/static/media/contactIMG.66983d224bbcd1ab7c46.jpg",
-    "index.html": "/stewartApp/index.html",
-    "main.42ac57a0.css.map": "/stewartApp/static/css/main.42ac57a0.css.map",
-    "main.c4b9600a.js.map": "/stewartApp/static/js/main.c4b9600a.js.map",
-    "787.b9823949.chunk.js.map": "/stewartApp/static/js/787.b9823949.chunk.js.map"
+    "main.css": "/stewartApp-1/static/css/main.3310f506.css",
+    "main.js": "/stewartApp-1/static/js/main.9ddecf28.js",
+    "static/js/787.b9823949.chunk.js": "/stewartApp-1/static/js/787.b9823949.chunk.js",
+    "static/media/banner-1.jpg": "/stewartApp-1/static/media/banner-1.d3a39849793c3cf601e2.jpg",
+    "static/media/banner-2.jpg": "/stewartApp-1/static/media/banner-2.41cf057a2cc3a8e8fee2.jpg",
+    "static/media/ownersrep.png": "/stewartApp-1/static/media/ownersrep.88d758d09e7859e68813.png",
+    "static/media/ownersrep2.png": "/stewartApp-1/static/media/ownersrep2.15bfd1d16647e400d7c5.png",
+    "static/media/logos.png": "/stewartApp-1/static/media/logos.fc480d72fb4ee31dcf2e.png",
+    "static/media/banner-4.jpg": "/stewartApp-1/static/media/banner-4.4be7121da1b80128ac71.jpg",
+    "static/media/banner-3.jpg": "/stewartApp-1/static/media/banner-3.30b0c16e1be7e61bfce0.jpg",
+    "static/media/bodyBackground.jpeg": "/stewartApp-1/static/media/bodyBackground.84c95165a5c52279a95c.jpeg",
+    "static/media/bodyBackgroundtop.jpeg": "/stewartApp-1/static/media/bodyBackgroundtop.b05c1822fa162b359e68.jpeg",
+    "static/media/contactIMG.jpg": "/stewartApp-1/static/media/contactIMG.66983d224bbcd1ab7c46.jpg",
+    "index.html": "/stewartApp-1/index.html",
+    "main.3310f506.css.map": "/stewartApp-1/static/css/main.3310f506.css.map",
+    "main.9ddecf28.js.map": "/stewartApp-1/static/js/main.9ddecf28.js.map",
+    "787.b9823949.chunk.js.map": "/stewartApp-1/static/js/787.b9823949.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42ac57a0.css",
-    "static/js/main.c4b9600a.js"
+    "static/css/main.3310f506.css",
+    "static/js/main.9ddecf28.js"
   ]
 }
