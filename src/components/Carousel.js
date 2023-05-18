@@ -5,6 +5,7 @@ import Banner3 from "../image/banner-3.jpg"
 import Banner4 from "../image/banner-4.jpg"
 // import Contact from "../components/Contact";
 import { Link } from "react-router-dom";
+import Accordion from 'react-bootstrap/Accordion';
 
 // import React from "react";
 // import CheckIcon from "../image/checkIcon.png";
@@ -281,35 +282,22 @@ import Carousel from 'react-bootstrap/Carousel';
 export function Representation(){
   const [isShown, setIsShown] = React.useState(true)
 
-  function toggleShown(){
-    setIsShown(prevShown => !prevShown)
-}
+//   function toggleShown(){
+//     setIsShown(prevShown => !prevShown)
+// }
   return(
     <div>
-     { window.innerWidth > 900?<div>
+     <div>
       <div  className="item">
-        <img src={CheckIcon} className="CheckIcon"></img>
+      <img src={require("../image/tick.png")}/>
+
         <div className="itemCaption">
           <h4>Owner's Representation</h4>
           <p>Owners get a good deal</p>
         </div>
       </div>
-      </div>:
-      <div onClick={toggleShown}>
-       { isShown?<div className="item">
-        <img src={CheckIcon} className="CheckIcon"></img>
-        <div className="itemCaption">
-          <h4>Owner's Representation</h4>
-          <p>Owners get a good deal</p>
-        </div>
-      </div>: <div  className="itemFlip">
-        <div className="itemCaptionFlip">
-          <p>Keeping owners informed and in financial control of their projects.</p>
-          <Link to="/Representation" >Read more</Link>
-
-        </div>
-      </div>}
-    </div>}
+      </div>
+    
     </div>
   
   )
@@ -317,35 +305,20 @@ export function Representation(){
 export function Management(){
   const [isShown, setIsShown] = React.useState(true)
 
-  function toggleShown(){
-    setIsShown(prevShown => !prevShown)
-}
+//   function toggleShown(){
+//     setIsShown(prevShown => !prevShown)
+// }
   return(
     <div>
-      { window.innerWidth > 900?<div>
+      <div>
       <div  className="item">
-        <img src={CheckIcon} className="CheckIcon"></img>
+      <img src={require("../image/tick.png")}/>
         <div className="itemCaption">
           <h4>Project Management</h4>
           <p>Projects managed successfully</p>
         </div>
       </div>
-      </div>:
-       <div onClick={toggleShown}>
-       {isShown?<div  className="item">
-        <img src={CheckIcon} className="CheckIcon"></img>
-        <div className="itemCaption">
-        <h4>Project Management</h4>
-        <p>Projects managed successfully</p>
-        </div>
-      </div>:<div  className="itemFlip">
-        <div className="itemCaptionFlip">
-          <p>Managing projects for quality workmanship and timely completion.</p>
-          <Link >Read more</Link>
-
-        </div>
-      </div>}
-    </div>}
+      </div>
     </div>
    
 
@@ -358,35 +331,20 @@ export function Management(){
 export function  Mediation(){
   const [isShown, setIsShown] = React.useState(true)
 
-  function toggleShown(){
-    setIsShown(prevShown => !prevShown)
-}
+//   function toggleShown(){
+//     setIsShown(prevShown => !prevShown)
+// }
   return(
     <div>
-      { window.innerWidth > 900?<div>
+      <div>
       <div  className="item">
-        <img src={CheckIcon} className="CheckIcon"></img>
+      <img src={require("../image/tick.png")}/>
         <div className="itemCaption">
           <h4>Mediation</h4>
           <p>Workable & fair settlements</p>
         </div>
       </div>
-      </div>:
-       <div onClick={toggleShown}>
-      {isShown?<div className="item">
-        <img src={CheckIcon} className="CheckIcon"></img>
-        <div className="itemCaption">
-          <h4>Mediation</h4>
-          <p>Workable & fair settlements</p>
-        </div>
-      </div>:<div  className="itemFlip">
-        <div className="itemCaptionFlip">
-          <p>Settling cases quickly and equitably with factual information.</p>
-          <Link >Read more</Link>
-
-        </div>
-      </div>}
-    </div>}
+      </div>
     </div>
 
    
@@ -399,36 +357,20 @@ export function  Mediation(){
 export function Construction(){
   const [isShown, setIsShown] = React.useState(true)
 
-  function toggleShown(){
-    setIsShown(prevShown => !prevShown)
-}
+//   function toggleShown(){
+//     setIsShown(prevShown => !prevShown)
+// }
   return(
     <div>
-      { window.innerWidth > 900?<div>
+      <div>
       <div  className="item">
-        <img src={CheckIcon} className="CheckIcon"></img>
+      <img src={require("../image/tick.png")}/>
         <div className="itemCaption">
           <h4>Troubled Construction</h4>
           <p>Sound evidence for solid cases</p>
         </div>
       </div>
-      </div>:
-    <div onClick={toggleShown}>
-
-{isShown?<div className="item">
-    <img src={CheckIcon} className="CheckIcon"></img>
-    <div className="itemCaption">
-      <h4>Troubled Construction</h4>
-      <p>Sound evidence for solid cases</p>
-    </div>
-  </div>:<div  className="itemFlip">
-    <div className="itemCaptionFlip">
-      <p>Helping lawyers build firm cases and stick to the construction facts.</p>
-      <Link >Read more</Link>
-
-    </div>
-  </div>}
-</div>}
+      </div>
 
     </div>
 
@@ -443,10 +385,10 @@ const CarouselFadeExample = () => {
   
 
   const slides = [
-    { image: Banner1, title: <Representation/> ,caption: <h4 className="caption">Keeping owners informed and in financial control of their projects. <Link to="/Representation" >Read more</Link></h4>},
-    { image: Banner2, title: <Mediation/> , caption:<h4 className="caption">Managing projects for quality workmanship and timely completion.</h4> },
-    { image: Banner3, title: <Management/>, caption: <h4 className="caption">Settling cases quickly and equitably with factual information.</h4>},
-    { image: Banner4, title: <Construction/>, caption: <h4 className="caption">Helping lawyers build firm cases and stick to the construction facts.</h4>},
+    { image: Banner1, title: <Representation/> ,caption: <h4 className="caption">Keeping owners informed and in financial control of their projects. <Link className="readMore"  to="/Representation" >Read more</Link></h4>},
+    { image: Banner2, title: <Mediation/> , caption:<h4 className="caption">Managing projects for quality workmanship and timely completion. <Link className="readMore" to="/Representation" >Read more</Link> </h4>},
+    { image: Banner3, title: <Management/>, caption: <h4 className="caption">Settling cases quickly and equitably with factual information.<Link className="readMore" to="/Representation" >Read more</Link></h4>},
+    { image: Banner4, title: <Construction/>, caption: <h4 className="caption">Helping lawyers build firm cases and stick to the construction facts.<Link className="readMore" to="/Representation" >Read more</Link></h4>},
 
   ];
   const handleSelect = (selectedIndex, e) => {
@@ -475,8 +417,80 @@ const CarouselFadeExample = () => {
   }
   
   return (
-  
-      <Carousel   interval={6000} activeIndex={index} controls={false} onSelect={handleSelect}>
+  <>
+    <Accordion  >
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>
+          <img src={require("../image/tick.png")}/>
+        <div className="according-item">
+          <h4>Owner's Representation</h4>
+          <p>Owners get a good deal</p>
+        </div>
+        </Accordion.Header>
+        <Accordion.Body>
+        <div className="according-item-caption">
+          <p>Keeping owners informed and in financial control of their projects. <Link to="/Representation" >Read more</Link></p>
+          
+
+        </div>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>
+        <img src={require("../image/tick.png")}/>
+
+        <div className="according-item">
+          <h4>Owner's Representation</h4>
+          <p>Owners get a good deal</p>
+        </div>
+        </Accordion.Header>
+        <Accordion.Body>
+        <div className="according-item-caption">
+          <p>Managing projects for quality workmanship and timely completion. <Link >Read more</Link></p>
+          
+
+        </div>
+        </Accordion.Body>
+        
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>
+        <img src={require("../image/tick.png")}/>
+
+        <div className="according-item">
+          <h4>Owner's Representation</h4>
+          <p>Owners get a good deal</p>
+        </div>
+        </Accordion.Header>
+        <Accordion.Body>
+        <div className="according-item-caption">
+          <p>Settling cases quickly and equitably with factual information. <Link >Read more</Link></p>
+          
+
+        </div>
+        </Accordion.Body>
+        
+      </Accordion.Item>
+      <Accordion.Item eventKey="3">
+        <Accordion.Header>
+        <img src={require("../image/tick.png")}/>
+
+        <div className="according-item">
+          <h4>Owner's Representation</h4>
+          <p>Owners get a good deal</p>
+        </div>
+        </Accordion.Header>
+        <Accordion.Body>
+        <div className="according-item-caption">
+      <p>Helping lawyers build firm cases and stick to the construction facts. <Link >Read more</Link></p>
+      
+
+    </div>
+        </Accordion.Body>
+        
+      </Accordion.Item>
+    </Accordion>
+  <Carousel   interval={6000} activeIndex={index} controls={false} onSelect={handleSelect}>
   {slides.map((slide, i) => (
     <Carousel.Item key={i}>
       <img className="bannerImage" src={slide.image} alt={slide.caption} />
@@ -495,6 +509,8 @@ const CarouselFadeExample = () => {
   ))}
   
 </Carousel>
+  </>
+      
   
 
 

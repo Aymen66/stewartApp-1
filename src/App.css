@@ -1,10 +1,11 @@
 
 .logo{
-    max-width: 70% ;
- 
+    max-width: 80% ;
+margin-top: 10px;
   
     
 }
+
 .me-auto{
     display: flex;
 justify-content: center;
@@ -13,37 +14,101 @@ align-items: center;
 }
 .nav-link{
     margin: 5px 15px;
+color: rgb(63, 62, 62) !important ;
+font-weight: bold !important;
+font-size: larger !important;
+margin-bottom: 0% ;
+
     
 }
 .navbar{
-    background-color: #161616; 
+  /* margin-left: auto;
+  margin-right: auto;
+  width: 960px; */
+min-height: 19vh;
+  background-image: inherit !important;
+border-bottom: 3px double rgb(128, 125, 125) !important;
+padding-bottom: 0% !important;
+
+
+}
+.container{
+  flex-direction: column !important;
+  align-items:center !important;
+  /* background-color: aqua; */
+  width: 960px !important;
+
+
+
+}
+.navbar-brand{
+margin-right: auto !important;  
+
 }
 
 
+.search-div {
+max-width: 100%;
+display: flex;
+/* align-items: center; */
+justify-content: center;
+background-color: #060606;
+padding: 10px;
 
+}
+.search-div .d-flex{
+  width: 70%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  
+  }
 .form-control {
-    border: 1px solid #ccc;
+    border: 1px solid white !important;
     outline: none;
     background-size: 22px;
     background-position: 13px;
     border-radius: 10px;
-    max-width: 100px;
+    max-width: 100%;
     height: 40px;
     padding: 25px;
     transition: all 0.5s;
     margin-right: 5px;
+    background-image: url("./image/bodyBackground.jpeg") !important;
+    background-size: cover !important;
+    color: black !important;
   }
+  .navbar-toggler{
+    /* margin-left: auto; */
+  }
+  .BsSearch{
+padding: 1px 10px ;
+background-color: #100707;
+border-radius: 5px;
+  }
+  .BsSearchMobile{
+    display: none;
+  }
+  svg{
+    fill: #EFEFEF !important;
+  }
+  .BsSearch h3{
+    font-size: 20px;
 
+  }
+.btn-outline-success{
+border:1px solid white !important;
+}
   .btn-close{
     display: none;
   }
 
-    .form-control:hover{
+    /* .form-control:hover{
         max-width: 300px;
         padding-left: 50px;
         transition: all 0.50s;
     
-      }
+      } */
 .contact{
   
   max-width: 80%;
@@ -79,19 +144,28 @@ align-items: center;
   margin-left: 20px;
 }
 .App{
-  background-color: rgb(192, 190, 195);
   max-width: 100%;
   min-height: 100vh;
   margin-bottom: 0px;
 padding-bottom: 10px;
+background: url("./image/bodyBackgroundtop.jpeg")  left top repeat-x, url("./image/bodyBackground.jpeg") right bottom repeat-x;
+background-color: #EFEFEF;
+/* background-size: 50%, 50%px;
+background-position: 430px 30px, 130px 130px; */
+/* background-repeat: repeat-x, repeat; */
+/* background: #EFEFEF url("./image/bodyBackground.jpeg") left top repeat ;
+/* background-size: 400px 600px;  */
+/* #EFEFEF */
+/* background-position-x: left ;
+background-position-y: top; */
 
-  
 }
 
 /* .navbar-toggler{
   background-color: rgb(192, 190, 195)!important;
 
 } */
+
 @media screen and (max-width: 900px) { 
  
   .contact{
@@ -134,33 +208,113 @@ padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   }
+  .navbar{
+    background-image: none !important;
+    background-color: #060606 !important;
+    
+      }
+  .navbar-collapse{
+    /* background-image: inherit !important; */
+    background-color: #060606 !important;
+    /* color: whitesmoke !important; */
+    position: absolute;
+    width: 96% !important;
+    top: 17vh;
+    padding-bottom: 20px;
+    
+  
+    
+  }
+  
+  .logo{
+    max-width: 50%;
+    margin-top: 0%;
+    height: 12vh;
+  }
+  .navbar-collapse .me-auto{
+    /* width: 100% !important; */
+    /* background-color: aqua; */
+  
+  
+  }
+  .container{
+    /* margin-left: auto !important;
+    margin-right: auto !important; */
+    max-width: 100% !important;
+    /* align-items:  center !important;
+    justify-content: space-between !important; */
+    /* align-items: center !important;
+    justify-content: center !important; */
+    flex-direction: row !important;
+    padding-left: 2% !important;
+    padding-right: 1% !important;
+    align-items: center !important;
+  
+  }
+  
+  .navbar-collapse .nav-link{
+    color: white !important;
+  
+  }
+      
+      .navbar-brand{
+          margin: 0px ;
+          padding: 0px 0px 0px 10px  !important ;
+          width: 90%;
+          /* i added those two lines yetsterday */
+         display: flex;
+         justify-content: space-between;
+    align-items: center ;
+         
+  
+      }
+   
+      .btn-close{
+          display: block;
+          
+        }
+        .d-flex{
+         justify-content: center;
+         align-items: center;
+         
+        }
+        .nav-item {
+          
+          text-align: center;
+  
+        }
+        .BsSearch{
+          /* padding: 0px 0px ;
+          margin-left: auto */
+          display: none;
+        }
+        
+        .BsSearchMobile{
+          padding: 1px 0px ;
+          /* background-color: #100707; */
+          border-radius: 5px;
+          display:block;
+          /* right: -15%;
+          position: relative; */
+          /* margin-left: auto;
+          margin-right: 0%; */
+            }
 }
 
-@media screen and (max-width: 600px) { 
-    
-    
-    .navbar-brand{
-        margin: 0px;
-        padding: 0px;
-        max-width: 70%;
-       
 
 
-    }
-  
-    .btn-close{
-        display: block;
-        
-      }
-      .d-flex{
-       justify-content: center;
-       align-items: center;
-       
-      }
-      .nav-item {
-        
-        text-align: center;
+@media screen and (max-width: 713px) {
+.navbar{
+  min-height: 18vh;
 
-      }
-  
+}
+  .navbar-brand{
+    margin: 0px;
+    padding: 0px;
+    width: 80%;
+  }
+  .logo{
+    max-width: 70%;
+
+  }
 }

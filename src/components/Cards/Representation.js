@@ -1,12 +1,38 @@
 import { Link } from "react-router-dom";
+import RepresentationOverview from '../../components/Cards/subcard/RepresentationOverview';
+import StepByStep from '../../components/Cards/subcard/step-by-step';
+import RecommendUs from '../../components/Cards/subcard/RecommendUs';
+
+
+import React, { useState } from 'react';
+
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 
 export default function Representation() {
+  const [key, setKey] = useState('Overview');
   return (
-    <div >
-        <h1>Owner's Representation Services</h1>
-        <p>If you’re an owner wanting to build, you’ve probably got a lot of questions. You know what you want, but construction is a minefield. There is a chance you will emerge unscathed, but, unassisted, you are far more likely to fall victim to a process that can be as devastating as it is counter-intuitive. With timely and easy-to-understand technical advice, expert communication and planning assistance, a savvy owner’s rep will soon become your single biggest asset.</p>
-        <h5>Stewart Consulting will keep you informed and in control, so your project is successfully completed</h5>
+    <div className="RepresentationMain" >
+ <Tabs
+      id="controlled-tab-example"
+      activeKey={key}
+      onSelect={(k) => setKey(k)}
+      className="mb-3"
+    >
+      <Tab eventKey="Overview" title="Overview">
+      <RepresentationOverview />
+      </Tab>
+      <Tab eventKey="Step-by-step" title="Step-by-step">
+      <StepByStep />
+      </Tab>
+      <Tab eventKey="Recommend" title="Recommend us" >
+      <RecommendUs />
+      </Tab>
+      
+    </Tabs>
+        
+      
       
     </div>
   );

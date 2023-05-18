@@ -1,8 +1,11 @@
 import './App.css';
+import './subcard.css';
+
 import NavBar from "./components/NavBar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import React from "react";
 import { HashRouter , Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer"
 
 import Home from "./components/Home"
 import Testimonials from "./components/Testimonials"
@@ -41,6 +44,12 @@ function App() {
     </Routes>
   </HashRouter>
   {/* <Carousel index={index} slides={slides} setIndex={setIndex}/> */}
+  <Footer/>
+<div className='loginandcredits'>
+  <a href='#'>Website Credits</a>
+  <a href='#'>Login</a>
+
+</div>
         </div>
   );
 }

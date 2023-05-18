@@ -10,11 +10,23 @@ import Logo from "../stewcon_logo2_0.png"
 import { BsSearch } from "react-icons/bs";
 import CloseButton from 'react-bootstrap/CloseButton';
 
+import { FaRegTimesCircle } from 'react-icons/fa';
+
+
+
 function NavBar() {
   const [isShown, setIsShown] = React.useState(false)
+  const [searchBar, setSearchBar] = React.useState(false)
+
+
+
+
   function toggleShown(){
       setIsShown(prevShown => !prevShown)
   }
+  function toggleSearchBar(){
+    setSearchBar(prevShown => !prevShown)
+}
 
 
 
@@ -25,16 +37,22 @@ function NavBar() {
    
 
     <Navbar collapseOnSelect  variant="dark"  expand="lg">
+    
+
       <Container >        
 
         <Navbar.Brand as={Link} to={"/"} >
        
       <img className='logo' src={Logo}/>
+      <div className='BsSearchMobile' onClick={toggleSearchBar}> {searchBar?  <h3><FaRegTimesCircle/></h3>  : <h3 > <BsSearch/>  </h3> }</div>
+
     
         </Navbar.Brand>
 
+
         <Navbar.Toggle onClick={toggleShown}>{isShown?<CloseButton variant="white" ></CloseButton>:null}</Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
+
+        <Navbar.Collapse  id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link  eventKey="1"  as={Link} to={"/"}  onClick={() => setIsShown(false)}>Home</Nav.Link>
             <NavDropdown title="About" id="basic-nav-dropdown">
@@ -63,6 +81,13 @@ function NavBar() {
 
           </Nav>
 
+<div className='BsSearch' onClick={toggleSearchBar}> {searchBar?  <h3><FaRegTimesCircle/></h3>  : <h3 > <BsSearch/>  </h3> }</div>
+          
+        </Navbar.Collapse>
+      </Container>
+      
+    </Navbar>
+    {searchBar?<div className='search-div'>
           <Form className="d-flex">
             <Form.Control
               type="search"
@@ -74,9 +99,7 @@ function NavBar() {
             <Button variant="outline-success">
           <BsSearch /></Button>
           </Form>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+          </div>:null}
     <Outlet/>
 
    </>
