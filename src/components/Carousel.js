@@ -275,12 +275,12 @@ import Accordion from 'react-bootstrap/Accordion';
 
 // export default CarouselFadeExample;
 // import { Carousel, CarouselItem, CarouselCaption } from 'react-bootstrap';
-import CheckIcon from "../image/checkIcon.png";
+// import CheckIcon from "../image/checkIcon.png";
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 export function Representation(){
-  const [isShown, setIsShown] = React.useState(true)
+  // const [isShown, setIsShown] = React.useState(true)
 
 //   function toggleShown(){
 //     setIsShown(prevShown => !prevShown)
@@ -303,7 +303,7 @@ export function Representation(){
   )
 }
 export function Management(){
-  const [isShown, setIsShown] = React.useState(true)
+  // const [isShown, setIsShown] = React.useState(true)
 
 //   function toggleShown(){
 //     setIsShown(prevShown => !prevShown)
@@ -329,7 +329,7 @@ export function Management(){
 }
 
 export function  Mediation(){
-  const [isShown, setIsShown] = React.useState(true)
+  // const [isShown, setIsShown] = React.useState(true)
 
 //   function toggleShown(){
 //     setIsShown(prevShown => !prevShown)
@@ -355,7 +355,7 @@ export function  Mediation(){
 
 
 export function Construction(){
-  const [isShown, setIsShown] = React.useState(true)
+  // const [isShown, setIsShown] = React.useState(true)
 
 //   function toggleShown(){
 //     setIsShown(prevShown => !prevShown)
@@ -364,7 +364,7 @@ export function Construction(){
     <div>
       <div>
       <div  className="item">
-      <img src={require("../image/tick.png")}/>
+      <img alt="tick" src={require("../image/tick.png")}/>
         <div className="itemCaption">
           <h4>Troubled Construction</h4>
           <p>Sound evidence for solid cases</p>
@@ -421,7 +421,7 @@ const CarouselFadeExample = () => {
     <Accordion  >
       <Accordion.Item eventKey="0">
         <Accordion.Header>
-          <img src={require("../image/tick.png")}/>
+          <img alt="tick" src={require("../image/tick.png")}/>
         <div className="according-item">
           <h4>Owner's Representation</h4>
           <p>Owners get a good deal</p>
@@ -437,7 +437,7 @@ const CarouselFadeExample = () => {
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header>
-        <img src={require("../image/tick.png")}/>
+        <img alt="tick" src={require("../image/tick.png")}/>
 
         <div className="according-item">
           <h4>Owner's Representation</h4>
@@ -455,7 +455,7 @@ const CarouselFadeExample = () => {
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header>
-        <img src={require("../image/tick.png")}/>
+        <img alt="tick" src={require("../image/tick.png")}/>
 
         <div className="according-item">
           <h4>Owner's Representation</h4>
@@ -473,7 +473,7 @@ const CarouselFadeExample = () => {
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header>
-        <img src={require("../image/tick.png")}/>
+        <img alt="tick" src={require("../image/tick.png")}/>
 
         <div className="according-item">
           <h4>Owner's Representation</h4>
